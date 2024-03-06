@@ -1,7 +1,7 @@
 import React from "react";
 
 const Turnos = () => {
-    return <div>turnos</div>;
+  return <div>hola</div>;
 };
 
 export default Turnos;
