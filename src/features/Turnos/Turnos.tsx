@@ -1,5 +1,3 @@
-import React from "react";
-
 import misionesGreenSrc from "../../images/misiones-green.svg";
 import misionesRedSrc from "../../images/misiones-red.svg";
 
