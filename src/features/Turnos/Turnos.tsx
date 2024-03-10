@@ -8,12 +8,12 @@ function Turnos() {
     return (
         <div className="relative w-[100vw] h-[100vh] bg-gradient-to-r from-[#347dce] from-40% overflow-hidden">
             <img
-                src={misionesGreenSrc}
+                src={misionesGreenSrc as unknown as string}
                 alt=""
                 className=" top-0 absolute right-0 w-[50%] max-w-[480px] min-w-[400px] z-[1] max-[720px]:mr-[-100px] max-[720px]:w-[70%]"
             />
             <img
-                src={misionesRedSrc}
+                src={misionesRedSrc as unknown as string}
                 alt=""
                 className=" top-0 absolute right-0 w-[50%] max-w-[480px] min-w-[400px] z-[1] max-[720px]:mr-[-100px] max-[720px]:w-[70%]"
             />
