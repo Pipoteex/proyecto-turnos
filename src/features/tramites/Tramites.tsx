@@ -12,24 +12,24 @@ import icono8Src from "../../images-tramites/icons-8.svg";
 function Tramites() {
   return (
     <div className=" w-[100vw] h-[100vh] bg-gradient-to-r from-[#216aba] from-[-30%] via-[#fafafa] via-[50%] to-[#216aba] to-[130%] flex items-center justify-between flex-col ">
-      <section className="w-[100%] h-[20%] flex items-center justify-between flex-row relative ">
+      <section className="w-[100%] h-[20%] max-[850px]:h-[15%] flex items-center justify-between flex-row relative ">
         <img
           src={logoSrc}
           alt=""
-          className="size-[130px] w-[10%] ml-[2%]  absolute max-[850px]:size-[90px] "
+          className="size-[130px] w-[10%] ml-[2%] absolute max-[850px]:size-[90px] "
         />
         <h2 className="w-[100%] h-[100%] max-[850px]:text-[20px] flex items-center justify-center font-semibold text-[28px]">
           TRAMITES
         </h2>
       </section>
-      <section className="w-[70%] h-[80%] max-[850px]:w-[80%] grid grid-cols-3 grid-rows-3 gap-8 mb-[2%] ">
+      <section className="w-[70%] h-[80%] max-[850px]:w-[80%] max-[850px]:h-[60%] grid grid-cols-3 grid-rows-3 gap-8 mb-[2%] ">
         <div className="w-[100%] h-[100%] bg-[#FFFFFF] rounded-[5px]   flex items-center justify-center flex-col">
           <img
             src={icono1Src}
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className=" text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px]">
+          <span className=" text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px]">
             Ingresos Brutos
           </span>
         </div>
@@ -39,7 +39,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px]">
+          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px]">
             Automotores
           </span>
         </div>
@@ -49,7 +49,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px]">
+          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px]">
             Inmobiliaria
           </span>
         </div>
@@ -60,7 +60,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] ">
+          <span className="text-[#171A1F] font-semibold text-[18px] text-center max-[750px]:text-[12px] max-[650px]:text-[10px] ">
             Convenio Multilateral
           </span>
         </div>
@@ -70,7 +70,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px]">
+          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px]">
             Pagos
           </span>
         </div>
@@ -80,7 +80,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] ">
+          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px] ">
             Fiscalizacion
           </span>
         </div>
@@ -90,7 +90,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] ">
+          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px] ">
             Sellos
           </span>
         </div>
@@ -100,7 +100,7 @@ function Tramites() {
             alt=""
             className="w-[20%] max-[750px]:w-[35%] "
           />
-          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px]">
+          <span className="text-[#171A1F] font-semibold text-[18px] max-[750px]:text-[12px] max-[650px]:text-[10px]">
             Otros Tramites
           </span>
         </div>
