@@ -1,43 +1,37 @@
 import misionesGreenSrc from "../../images/misiones-green.svg";
 import misionesRedSrc from "../../images/misiones-red.svg";
-import logoSrc from "../../images/logo.svg";
 
-import butomimageSrc from "../../images/butom-image.svg";
+import Wawe from "../../images/wave.svg?react";
+import Logo from "../../images/logo.svg?react";
 
 function Turnos() {
-  return (
-    <div className="relative w-[100vw] h-[100vh] bg-gradient-to-r from-[#347dce] from-40% flex items-center justify-center flex-col">
-      <div className="w-[100%] h-[100%] relative ">
-        <img
-          src={misionesGreenSrc}
-          alt=""
-          className=" w-[100%] h-[95%] absolute right-[-26%] z-[1] max-[1020px]:right-[-15%] max-[720px]:right-[-6%]"
-        />
-        <img
-          src={misionesRedSrc}
-          alt=""
-          className=" w-[100%] h-[100%] absolute right-[-29%]  z-[1] max-[1020px]:right-[-20%] max-[720px]:right-[-13%]"
-        />
-      </div>
+    return (
+        <div className="relative w-[100vw] h-[100vh] bg-gradient-to-r from-[#347dce] from-40% overflow-hidden">
+            <img
+                src={misionesGreenSrc as unknown as string}
+                alt=""
+                className=" top-0 absolute right-0 w-[50%] max-w-[480px] min-w-[400px] z-[1] max-[720px]:mr-[-100px] max-[720px]:w-[70%]"
+            />
+            <img
+                src={misionesRedSrc as unknown as string}
+                alt=""
+                className=" top-0 absolute right-0 w-[50%] max-w-[480px] min-w-[400px] z-[1] max-[720px]:mr-[-100px] max-[720px]:w-[70%]"
+            />
 
-      <div className=" relative w-[100%] h-[100%] flex items-center justify-center flex-col bg-[#003C60] z-[0]">
-        <img
-          src={logoSrc}
-          alt=""
-          className=" size-[150px] z-[1] absolute top-[5%] left-[0%] max-[1150px]:top-[0%] max-[1000px]:top-[-2%] max-[900px]:top-[-4%]  max-[800px]:top-[-5.5%]  max-[700px]:size-[130px]"
-        />
-        <img src={butomimageSrc} alt="" className="absolute top-[0%] z-[0]  " />
-        <div className=" flex items-center justify-center flex-col absolute bottom-[23%] w-[100%] h-[40%]  ">
-          <span className=" w-[100%] h-[100%] max-[1120px]:text-[30px] max-[920px]:text-[25px] max-[720px]:text-[20px] font-semibold text-[40px]  text-[#FFFFFF] flex items-center justify-center ">
-            ¡realizar tus tramites ahora es mas facil y rapido!
-          </span>
-          <button className="w-[23%] h-[100%] max-[720px]:h-[70%] flex items-center justify-center bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-60% rounded-[5px] text-[#FFFFFF] text-[20px] font-[lato]">
-            Continuar
-          </button>
+            <Logo className="absolute top-[50%] z-10 max-[720px]:w-[130px] max-[720px]:top-[44%] max-[720px]:ml-[-13px]" />
+
+            <Wawe className="absolute bottom-0 z-0 !h-[42%] max-[720px]:!w-[350%] max-[720px]:!h-[55%]" />
+
+            <div className=" absolute w-[100%] h-[35%] bottom-0 font-sans flex flex-col items-center justify-center">
+                <span className="w-[100%] mb-[30px] max-[1120px]:text-[30px] max-[920px]:text-[25px] max-[720px]:text-[25px] font-semibold text-[40px]  text-[#FFFFFF] text-center ">
+                    ¡Realizar tus tramites ahora es mas facil y rapido!
+                </span>
+                <button className="w-[300px] px-[20px] py-[5px] bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-60% rounded-[5px] text-[#FFFFFF] text-[20px] ">
+                    Continuar
+                </button>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default Turnos;

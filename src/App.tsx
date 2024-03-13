@@ -8,19 +8,19 @@ import Descripcion from "./features/Descripcion/Descripcion.tsx";
 const queryClient = new QueryClient();
 
 export default function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<div>Hola fer</div>} />
-          <Route path="/turnos" element={<Turnos />} />
-          <Route path="/opciones" element={<Opciones />} />
-          <Route path="/tramites" element={<Tramites />} />
-          <Route path="/descripcion" element={<Descripcion />} />
+    return (
+        <QueryClientProvider client={queryClient}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Turnos />} />
+                    <Route path="/turnos" element={<Turnos />} />
+                    <Route path="/opciones" element={<Opciones />} />
+                    <Route path="/tramites" element={<Tramites />} />
+                    <Route path="/descripcion" element={<Descripcion />} />
 
-          <Route path="*" element={<div>No existe la pagina</div>} />
-        </Routes>
-      </BrowserRouter>
-    </QueryClientProvider>
-  );
+                    <Route path="*" element={<div>No existe la pagina</div>} />
+                </Routes>
+            </BrowserRouter>
+        </QueryClientProvider>
+    );
 }
