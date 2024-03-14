@@ -4,6 +4,7 @@ import Turnos from "./features/Turnos/Turnos.tsx";
 import Opciones from "./features/Opciones/Opciones.tsx";
 import Tramites from "./features/tramites/Tramites.tsx";
 import Descripcion from "./features/Descripcion/Descripcion.tsx";
+import Login from "./features/Login/Login.tsx";
 
 const queryClient = new QueryClient();
 
@@ -13,6 +14,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<div>Hola fer</div>} />
+          <Route path="/login" element={<Login />} />
           <Route path="/turnos" element={<Turnos />} />
           <Route path="/opciones" element={<Opciones />} />
           <Route path="/tramites" element={<Tramites />} />
