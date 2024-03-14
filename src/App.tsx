@@ -14,11 +14,11 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<div>Hola fer</div>} />
-          <Route path="/login" element={<Login />} />
           <Route path="/turnos" element={<Turnos />} />
           <Route path="/opciones" element={<Opciones />} />
           <Route path="/tramites" element={<Tramites />} />
           <Route path="/descripcion" element={<Descripcion />} />
+          <Route path="/login" element={<Login />} />
 
           <Route path="*" element={<div>No existe la pagina</div>} />
         </Routes>

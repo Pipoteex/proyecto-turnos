@@ -1,12 +1,6 @@
-import React from "react";
-import logoSrc from "../../images/logo.svg";
-import WaveSrc from "../../images/wave.login.svg";
-
 const Login = () => {
   return (
     <div className=" relative w-[100vw] h-[100vh] ">
-      <img src={WaveSrc} alt="" className=" absolute w-[500%] h-[100%] " />
-      <img src={logoSrc} alt="" className="absolute" />
       <section className="relative w-[100%] h-[100%]">
         <div>
           <h2>Iniciar Sesion</h2>
