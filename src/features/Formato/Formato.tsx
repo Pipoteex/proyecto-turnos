@@ -104,9 +104,9 @@ function Formato() {
                     return (
                       <div
                         key={i}
-                        className="w-[100%] h-[100%]  flex items-center justify-between flex-col py-[1%] bg-[#F3F4F6] rounded-[5px]  "
+                        className="w-[100%] h-[100%]   flex items-center justify-between flex-col py-[1%] bg-[#F3F4F6] rounded-[5px]  "
                       >
-                        <div className="w-[97%] h-[100%] flex items-start justify-start  ">
+                        <div className="w-[97%] h-[100%]  flex items-start justify-start  ">
                           <label className="w-[100%] h-[100%] flex items-center justify-start gap-5 ">
                             <Icons7 className="size-[24px]" />
                             <span className=" font-semibold text-[16px]">
@@ -118,7 +118,7 @@ function Formato() {
                           </span>
                         </div>
                         <div className="w-[97%] h-[100%] flex items-center justify-between gap-2 ">
-                          <label className=" flex items-start  flex-col ">
+                          <label className=" flex items-start  flex-col  ">
                             <span className="text-[#6E7787] text-[16px]">
                               DNI
                             </span>
@@ -283,7 +283,7 @@ function Formato() {
                 </section>
                 <section className="w-[100%] h-[100%] flex items-start justify-start flex-col ">
                   <span className="text-[#6E7787]">Observaciones</span>
-                  <textarea className="bg-[#e6e6e7] w-[100%] h-[100%]"></textarea>
+                  <textarea className="bg-[#e6e6e7] w-[100%] h-[100%] outline-none p-[0.5%]"></textarea>
                 </section>
                 <section className="w-[100%] h-[100%] flex items-center justify-between">
                   <div className="w-[100%] h-[100%] ">

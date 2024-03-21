@@ -6,6 +6,7 @@ import Tramites from "./features/tramites/Tramites.tsx";
 import Descripcion from "./features/Descripcion/Descripcion.tsx";
 import Login from "./features/Login/Login.tsx";
 import Formato from "./features/Formato/Formato.tsx";
+import Historial from "./features/Historial/Historial.tsx";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/descripcion" element={<Descripcion />} />
           <Route path="/login" element={<Login />} />
           <Route path="/formato" element={<Formato />} />
+          <Route path="/historial" element={<Historial />} />
 
           <Route path="*" element={<div>No existe la pagina</div>} />
         </Routes>
