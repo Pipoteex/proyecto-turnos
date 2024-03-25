@@ -106,7 +106,11 @@ const TomarTurno = () => {
                 </div>
             </div>
 
-            <CommonModal isOpen={isOpen} setIsOpen={setIsOpen}>
+            <CommonModal
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                withHeader={false}
+            >
                 <div className="p-[30px] flex flex-col justify-center items-center">
                     <div className="text-[30px]">
                         ¡Gracias por tomar su turno!
@@ -114,8 +118,8 @@ const TomarTurno = () => {
                     <div>Por favor espere a ser llamado por su DNI.</div>
                     <div className="flex justify-end w-full pt-[20px]">
                         <CommonButton
-                            text="Aceptar"
-                            style="text-[15px]"
+                            text="aceptar"
+                            style="text-[15px] bg-[#F26298] text-[red]"
                             onClick={() => navigate("/main")}
                         />
                     </div>

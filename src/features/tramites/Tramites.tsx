@@ -92,7 +92,7 @@ function Tramites() {
             <section className="w-[100%] h-[10%] flex items-center justify-start bg-[#13496A]">
                 <button
                     className="ml-[3%] w-[10%] h-[80%] max-[850px]:ml-[6%] max-[850px]:w-[22%] flex items-center justify-center bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-55% text-[#FFFFFF] rounded-[5px]"
-                    onClick={() => navigate("/main")}
+                    onClick={() => navigate("/")}
                 >
                     Atras
                 </button>
