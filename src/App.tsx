@@ -17,7 +17,7 @@ export default function App() {
         <QueryClientProvider client={queryClient}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/main" element={<Bienvenida />} />
+                    <Route path="/" element={<Bienvenida />} />
                     <Route path="/tomar_turno" element={<TomarTurno />} />
                     <Route path="/tramites" element={<Tramites />} />
                     <Route

@@ -99,7 +99,7 @@ const TomarTurno = () => {
                 <div className=" w-[100%] absolute bottom-0 h-[10%] bg-[#13496A] flex items-center justify-start ">
                     <button
                         className="w-[12%] h-[75%] max-[1000px]:w-[15%] max-[720px]:w-[25%] max-[1000px]:ml-[4%]  bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-55%  ml-[3%] rounded-[5px] text-[#FFFFFF] text-[16px] cursor-pointer"
-                        onClick={() => navigate("/main")}
+                        onClick={() => navigate("/")}
                     >
                         Cancelar
                     </button>
@@ -116,7 +116,7 @@ const TomarTurno = () => {
                         <CommonButton
                             text="Aceptar"
                             style="text-[15px]"
-                            onClick={() => navigate("/main")}
+                            onClick={() => navigate("/")}
                         />
                     </div>
                 </div>
