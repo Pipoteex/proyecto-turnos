@@ -2,7 +2,7 @@ import iconUserSrc from "../../images/user-icon-descripcion.svg";
 import iconRightSrc from "../../images/right-icon-descripcion.svg";
 import iconAgenciaSrc from "../../images/logo-agenciaTributaria.svg";
 
-function Descripcion() {
+function TurnosActuales() {
     return (
         <div className="w-[100vw] h-[100vh] flex items-center justify-center flex-row box-border ">
             <section className="w-[100%] h-[100%] flex items-center justify-center flex-col bg-[#F3F4F6] py-[15px]  ">
@@ -74,4 +74,4 @@ function Descripcion() {
     );
 }
 
-export default Descripcion;
+export default TurnosActuales;

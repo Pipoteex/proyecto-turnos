@@ -1,10 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 import misionesGreenSrc from "../../images/misiones-green.svg";
 import misionesRedSrc from "../../images/misiones-red.svg";
-
 import Wawe from "../../images/wave.svg?react";
 import Logo from "../../images/logo.svg?react";
 
-function Turnos() {
+function Bienvenida() {
+    //ESTADOS
+
+    //HOOKS
+    const navigate = useNavigate();
+    //FUNCIONES
+
     return (
         <div className="relative w-[100vw] h-[100vh] bg-gradient-to-r from-[#347dce] from-40% overflow-hidden">
             <img
@@ -26,7 +33,10 @@ function Turnos() {
                 <span className="w-[100%] mb-[30px] max-[1120px]:text-[30px] max-[920px]:text-[25px] max-[720px]:text-[25px] font-semibold text-[40px]  text-[#FFFFFF] text-center ">
                     ¡Realizar tus tramites ahora es mas facil y rapido!
                 </span>
-                <button className="w-[300px] px-[20px] py-[5px] bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-60% rounded-[5px] text-[#FFFFFF] text-[20px] ">
+                <button
+                    className="w-[300px] px-[20px] py-[5px] bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-60% rounded-[5px] text-[#FFFFFF] text-[20px] "
+                    onClick={() => navigate("/tramites")}
+                >
                     Continuar
                 </button>
             </div>
@@ -34,4 +44,4 @@ function Turnos() {
     );
 }
 
-export default Turnos;
+export default Bienvenida;

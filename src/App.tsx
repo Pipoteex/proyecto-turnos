@@ -1,32 +1,34 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Turnos from "./features/Turnos/Turnos.tsx";
-import Opciones from "./features/Opciones/Opciones.tsx";
-import Tramites from "./features/tramites/Tramites.tsx";
-import Descripcion from "./features/Descripcion/Descripcion.tsx";
+import Bienvenida from "./features/Bienvenida/Bienvenida.tsx";
+import TomarTurno from "./features/TomarTurno/TomarTurno.tsx";
+import Tramites from "./features/Tramites/Tramites.tsx";
+import TurnoActuales from "./features/TurnosActuales/TurnosActuales.tsx";
 import Login from "./features/Login/Login.tsx";
-import Formato from "./features/Formato/Formato.tsx";
+import Admin from "./features/Admin/Admin.tsx";
 import Historial from "./features/Historial/Historial.tsx";
+import PaginaNoExistente from "./features/PaginaNoExistente/PaginaNoExistente.tsx";
 
 const queryClient = new QueryClient();
 
 export default function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<div>Hola fer</div>} />
-          <Route path="/turnos" element={<Turnos />} />
-          <Route path="/opciones" element={<Opciones />} />
-          <Route path="/tramites" element={<Tramites />} />
-          <Route path="/descripcion" element={<Descripcion />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/formato" element={<Formato />} />
-          <Route path="/historial" element={<Historial />} />
-
-          <Route path="*" element={<div>No existe la pagina</div>} />
-        </Routes>
-      </BrowserRouter>
-    </QueryClientProvider>
-  );
+    return (
+        <QueryClientProvider client={queryClient}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/main" element={<Bienvenida />} />
+                    <Route path="/tomar_turno" element={<TomarTurno />} />
+                    <Route path="/tramites" element={<Tramites />} />
+                    <Route
+                        path="/turnos_actuales"
+                        element={<TurnoActuales />}
+                    />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/admin" element={<Admin />} />
+                    <Route path="/historial" element={<Historial />} />
+                    <Route path="*" element={<PaginaNoExistente />} />
+                </Routes>
+            </BrowserRouter>
+        </QueryClientProvider>
+    );
 }
