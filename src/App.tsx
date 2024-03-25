@@ -2,12 +2,13 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Bienvenida from "./features/Bienvenida/Bienvenida.tsx";
 import TomarTurno from "./features/TomarTurno/TomarTurno.tsx";
-import Tramites from "./features/Tramites/Tramites.tsx";
+
 import TurnoActuales from "./features/TurnosActuales/TurnosActuales.tsx";
 import Login from "./features/Login/Login.tsx";
 import Admin from "./features/Admin/Admin.tsx";
 import Historial from "./features/Historial/Historial.tsx";
 import PaginaNoExistente from "./features/PaginaNoExistente/PaginaNoExistente.tsx";
+import Tramites from "./features/Tramites/Tramites.tsx";
 
 const queryClient = new QueryClient();
 
