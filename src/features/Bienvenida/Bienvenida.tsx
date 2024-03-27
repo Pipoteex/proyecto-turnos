@@ -4,6 +4,7 @@ import misionesGreenSrc from "../../images/misiones-green.svg";
 import misionesRedSrc from "../../images/misiones-red.svg";
 import Wawe from "../../images/wave.svg?react";
 import Logo from "../../images/logo.svg?react";
+import CommonBottonDegrade from "../../components/CommonBottonDegrade/CommonBottonDegrade";
 
 function Bienvenida() {
     //ESTADOS
@@ -33,12 +34,12 @@ function Bienvenida() {
                 <span className="w-[100%] mb-[30px] max-[1120px]:text-[30px] max-[920px]:text-[25px] max-[720px]:text-[25px] font-semibold text-[40px]  text-[#FFFFFF] text-center ">
                     ¡Realizar tus tramites ahora es mas facil y rapido!
                 </span>
-                <button
-                    className="w-[300px] px-[20px] py-[5px] bg-gradient-to-r from-[#50376f] from-25% to-[#b6264f] to-60% rounded-[5px] text-[#FFFFFF] text-[20px] "
+
+                <CommonBottonDegrade
+                    text="Continuar"
+                    style="w-[300px] px-[20px] py-[5px] text-[20px] text-center"
                     onClick={() => navigate("/tramites")}
-                >
-                    Continuar
-                </button>
+                />
             </div>
         </div>
     );
