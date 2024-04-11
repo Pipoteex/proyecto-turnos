@@ -14,7 +14,7 @@ import { useState } from "react";
 const queryClient = new QueryClient();
 
 export default function App() {
-    const [state, setstate] = useState(false);
+    /* const [state, setstate] = useState(false); */
 
     return (
         <QueryClientProvider client={queryClient}>
