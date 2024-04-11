@@ -9,10 +9,13 @@ import Admin from "./features/Admin/Admin.tsx";
 import Historial from "./features/Historial/Historial.tsx";
 import PaginaNoExistente from "./features/PaginaNoExistente/PaginaNoExistente.tsx";
 import Tramites from "./features/Tramites/Tramites.tsx";
+import { useState } from "react";
 
 const queryClient = new QueryClient();
 
 export default function App() {
+    const [state, setstate] = useState(false);
+
     return (
         <QueryClientProvider client={queryClient}>
             <BrowserRouter>
